@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    id        = "fdble.driver.app"
+    version   = "1.0">
+    <name>Foodable Driver App</name>
+    <description>
+       Foodable Driver App
+    </description>
+    <author email="foodabledriver@gmail.com" href="http://rapidtest.ga/restomulti">
+    </author>
+    <icon src="icon.png" />           
+    <content src="index.html" />
+               
+	<preference name="orientation" value="portrait" />
+	<preference name="android-build-tool" value="gradle" />
+	
+		<feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+  
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+   
+	<gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+    
+	<gap:plugin name="phonegap-plugin-push" source="npm">
+      <param name="SENDER_ID" value="" />
+    </gap:plugin>
+	
+    <gap:plugin name="cordova-plugin-device" source="npm" />		
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />		
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />	
+	<gap:plugin name="cordova-plugin-geolocation" source="npm" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" />	
+			
+	<gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" />
+	<gap:plugin name="cordova-plugin-x-toast" source="npm" spec="2.6.0" />	
+	<gap:plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />
+		   
+    <gap:plugin name="cordova-plugin-googlemaps"  source="npm">
+       <param name="API_KEY_FOR_ANDROID" value="AIzaSyChmWoOdPTTHRtPc3s97OxCE9WVcq_4xEs" />
+      
+	
+    </gap:plugin>
+        <preference name="phonegap-version" value="cli-7.1.0" />
+    <plugin name="cordova-plugin-insomnia" version="4.1.0" source="npm" />    
+    <gap:plugin name="cordova-plugin-buildinfo" source="npm" spec="1.1.0" />	 
+    <gap:plugin name="cordova-plugin-vibration" source="npm" spec="2.1.4" />	
+    <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.0" />
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" />
+
+<preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="26" />
+    <plugin name="cordova-plugin-mauron85-background-geolocation" source="npm" >
+        <variable name="ALWAYS_USAGE_DESCRIPTION" value="This app requires background tracking enabled" />
+    </plugin>
+             
+	<gap:splash src="splash.png" />
+	<preference name="AutoHideSplashScreen" value="false" />  	
+    <preference name="SplashScreenDelay" value="5000" />  
+	
+    <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
+    
+    <gap:config-file platform="android" parent="/manifest">
+	    
+        <supports-screens android:xlargeScreens="true" android:largeScreens="true" android:smallScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar" >            
+        </application>
+    </gap:config-file> 
+    
+    <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription" overwrite="true"> 
+      <string>Foodable would like to access your photo</string> 
+    </gap:config-file>    
+	    
+	<icon src="icon.png" />
+
+	
+	<icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/ldpi.png" />
+	<icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/mdpi.png" />
+	<icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/hdpi.png" />
+	<icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/xhdpi.png" />
+	<icon gap:platform="android" gap:qualifier="xxhdpi" src="res/icon/android/xxhdpi.png" />
+	<icon gap:platform="android" gap:qualifier="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+	
+	<splash src="splash.png" />
+	
+	<splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+	<splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+	<splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+	<splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+	<splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+	<splash gap:platform="android" gap:qualifier="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
+ 
+	        
+</widget>

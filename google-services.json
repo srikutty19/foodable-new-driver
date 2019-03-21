@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "774889919637",
+    "firebase_url": "https://foodable-driver.firebaseio.com",
+    "project_id": "foodable-driver",
+    "storage_bucket": "foodable-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774889919637:android:f9e7854bcb6ff7b0",
+        "android_client_info": {
+          "package_name": "fdble.driver.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774889919637-mm3otok8shj20k66k5pjbe5q10oqkeef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fdble.driver.app",
+            "certificate_hash": "577e1e350127c18cbe336e9e40ceb2a4c3baa7f0"
+          }
+        },
+        {
+          "client_id": "774889919637-9dbbsao3mdkh8lnn30p8b197euja1tre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSeOezwhyC9Wjlrg2AfpqaKsUWobmeAY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774889919637-9dbbsao3mdkh8lnn30p8b197euja1tre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
